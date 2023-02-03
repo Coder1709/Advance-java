@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="https://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+	<bean name="objEmp" class="com.sprintcore.collections.Emp">
+	<property name="eName" value="Surya"/>
+	<property name="ePhones">
+	<list>
+	<value>999</value>
+	<value>3155</value>
+	<value>26561</value>
+	</list>
+	</property>
+	<property name="eAddresses">
+	<set>
+	<value>NOida</value>
+	<value>Lucknow</value>
+	</set>
+	</property>
+	<property name="eCourses">
+	<map>
+	<entry key="java"><value>4 months</value></entry>
+	<entry key="Data analytics"><value>5months</value></entry>
+	<entry key="Advance Java"><value>6 months</value></entry>
+	</map></property>
+	</bean>
+	</beans>
